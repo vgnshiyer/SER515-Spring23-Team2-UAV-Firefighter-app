@@ -23,9 +23,7 @@ public class Drone {
 
 	public void changeState() {
 		this.state = valid_states.get(state_id); // change state of the drone
-		for(Person person : persons){
-			person.update(this); // update all the observers
-		}
+		notifyPerson();
 		state_id = (state_id + 1) % valid_states.size();
 	}
 
@@ -38,7 +36,9 @@ public class Drone {
 	}
 
 	public void notifyPerson() {
-
+		for(Person person : persons){
+			person.update(this); // update all the observers
+		}
 	}
 
 	public void setState(String state){
