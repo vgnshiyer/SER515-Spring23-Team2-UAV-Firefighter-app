@@ -1,4 +1,4 @@
-##### Author: Vignesh V Iyer
+**Author:** Vignesh V Iyer
 
 **ASU ID:** 1227792802
 
