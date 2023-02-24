@@ -48,4 +48,20 @@ public class Drone {
 	public String getState(){
 		return this.state;
 	}
+
+	public void setID(int ID){
+		this.ID = ID;
+	}
+
+	public int getID(){
+		return this.ID;
+	}
+
+	public void setPackID(int pack_id){
+		this.pack_id = pack_id;
+	}
+
+	public int getPackID(){
+		return this.pack_id;
+	}
 }
