@@ -11,12 +11,12 @@ public class Drone {
 
 	private List<Person> persons = new ArrayList<Person>();
 
-	public static int state_id;
+	public static int state_id = 0;
 
 	// for the purpose of demonstration, we  are using this dummy list with all the valid states
 	public List<String> valid_states = new ArrayList<String>();
 
-	public void Drone(int ID, int pack_id) {
+	public Drone(int ID, int pack_id) {
 		this.ID = ID;
 		this.pack_id = pack_id;
 	}
