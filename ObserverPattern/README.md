@@ -13,7 +13,7 @@ Please follow below steps to execute the program:
 
 Execute this command in the directory 'ObserverPattern/src'
 
-`java main.java`
+`javac main.java`
 `java main`
 
 **Sample output**
