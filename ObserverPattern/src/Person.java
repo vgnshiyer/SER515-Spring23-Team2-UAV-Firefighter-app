@@ -4,11 +4,15 @@ public abstract class Person {
 
 	public abstract void update(Drone drone);
 
-	void setID(int ID){
+	public Person(int ID){
 		this.ID = ID;
 	}
 
-	int getID(){
+	public void setID(int ID){
+		this.ID = ID;
+	}
+
+	public int getID(){
 		return this.ID;
 	}
 }
