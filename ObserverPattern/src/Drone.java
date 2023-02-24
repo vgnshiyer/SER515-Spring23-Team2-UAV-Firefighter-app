@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Drone {
 
 	private int ID;
@@ -6,15 +9,13 @@ public class Drone {
 
 	private String state;
 
-	private Person[] person;
+	private List<Person> persons = new ArrayList<Person>();
 
-	public void Drone() {
-
+	public void Drone(int ID, int pack_id) {
+		this.ID = ID;
+		this.pack_id = pack_id;
 	}
 
-	/**
-	 *  
-	 */
 	public void changeState() {
 
 	}
@@ -28,7 +29,7 @@ public class Drone {
 	}
 
 	public void notifyPerson() {
-
+		
 	}
 
 }
