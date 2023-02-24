@@ -6,4 +6,11 @@ public class Pilot extends Person {
 
 	}
 
+	void assignDrone(Drone drone){
+		this.drone = drone;
+	}
+
+	Drone getDrone(){
+		return this.drone;
+	}
 }
