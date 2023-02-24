@@ -29,8 +29,15 @@ public class main {
 
         operator2.addDrone(drone3);
 
+        // adding dummy states for the drone
+        Drone.valid_states.add("take-off");
+        Drone.valid_states.add("join-pack");
+        Drone.valid_states.add("disband");
+        Drone.valid_states.add("malfunction");
+        Drone.valid_states.add("exhausted-resources");
+
         // demonstrating state change for drones
-        for(int i = 0; i < 10; i++){
+        for(int i = 0; i < 3; i++){
             int droneid = getDroneID(1,3);
             Drone drone = null;
             if(droneid == 1) drone = drone1;
