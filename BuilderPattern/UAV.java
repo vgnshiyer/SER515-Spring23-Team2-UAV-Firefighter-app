@@ -1,90 +1,74 @@
 public class UAV {
 
-	private String wingType;
+	private final String wingType;
+	private final String flightEndurance;
+	private final String size;
+	private final int weightCapacity;
+	private final int batteryPower;
+	private final String otherFeatures;
+	private final int ID;
+	private final int pack_id;
 
-	private String flightEndurance;
-
-	private String size;
-
-	private int weightCapacity;
-
-	private int batteryPower;
-
-	private String otherFeatures;
-
-	private int ID;
-
-	private int pack_id;
-
-	/**
-	 *  
-	 */
-	public void UAV(UAV.UAVBuilder uavBuilder) {
-
+    private UAV(UAV.UAVBuilder uavBuilder) {
+        this.wingType = uavBuilder.wingType;
+        this.flightEndurance = uavBuilder.flightEndurance;
+        this.size = uavBuilder.size;
+        this.weightCapacity = uavBuilder.weightCapacity;
+        this.batteryPower = uavBuilder.batteryPower;
+        this.otherFeatures = uavBuilder.otherFeatures;
+        this.ID = uavBuilder.ID;
+        this.pack_id = uavBuilder.pack_id;
 	}
 
-	public class UAVBuilder {
+	public static class UAVBuilder {
 
 		private String wingType;
-
 		private String size;
-
 		private String flightEndurance;
-
 		private Integer weightCapacity;
-
 		private Integer batteryPower;
-
 		private String otherFeatures;
+		private final int ID;
+		private final int pack_id;
 
-		private int ID;
-
-		private int pack_id;
-
-		/**
-		 *  
-		 */
-		public void UavBuilder(int ID, int pack_id) {
-
+		public UAVBuilder(int ID, int pack_id) {
+            // required fields
+            this.ID = ID;
+            this.pack_id = pack_id;
 		}
 
-		public int setWingType(String wingType) {
-			return 0;
+		public UAVBuilder setWingType(String wingType) {
+			this.wingType = wingType;
+            return this;
 		}
 
-		/**
-		 *  
-		 */
-		public int setFlightEndurance(String flightEndurance) {
-			return 0;
+		public UAVBuilder setFlightEndurance(String flightEndurance) {
+			this.flightEndurance = flightEndurance;
+            return this;
 		}
 
-		/**
-		 *  
-		 */
-		public int setWeightCapacity(int weightCapacity) {
-			return 0;
+		public UAVBuilder setWeightCapacity(int weightCapacity) {
+            this.weightCapacity = weightCapacity;
+			return this;
 		}
 
-		/**
-		 *  
-		 */
-		public int setBatteryPower(int batteryPower) {
-			return 0;
+		public UAVBuilder setBatteryPower(int batteryPower) {
+            this.batteryPower = batteryPower;
+			return this;
 		}
 
-		public int setOtherFeatures(String otherFeatures) {
-			return 0;
+		public UAVBuilder setOtherFeatures(String otherFeatures) {
+            this.otherFeatures = otherFeatures;
+			return this;
 		}
 
-		public UAV setSize(int size) {
-			return null;
+		public UAVBuilder setSize(String size) {
+            this.size = size;
+			return this;
 		}
 
 		public UAV build() {
-			return null;
+			return new UAV(this);
 		}
-
 	}
-
 }
