@@ -9,11 +9,13 @@ public class MoveCommand implements Command {
 	private Drone drone;
 
 	public MoveCommand(Drone drone, int x, int y) {
-
+		this.drone = drone;
+        this.x = x;
+        this.y = y;
 	}
 
 	public void execute() {
-
+		drone.move(x, y);
 	}
 
 }
