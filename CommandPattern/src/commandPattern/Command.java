@@ -1,4 +1,4 @@
-package commandPatter;
+package commandPattern;
 
 public abstract interface Command {
 
