@@ -1,6 +1,5 @@
-package commandPattern;
 
-public abstract interface Command {
+public interface Command {
 
 	public abstract void execute();
 
