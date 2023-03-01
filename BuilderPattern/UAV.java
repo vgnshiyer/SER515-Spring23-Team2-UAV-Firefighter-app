@@ -25,8 +25,8 @@ public class UAV {
 		private String wingType;
 		private String size;
 		private String flightEndurance;
-		private Integer weightCapacity;
-		private Integer batteryPower;
+		private int weightCapacity = 0;
+		private int batteryPower = 0;
 		private String otherFeatures;
 		private final int ID;
 		private final int pack_id;
