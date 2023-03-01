@@ -14,12 +14,10 @@ Here the UAV class has a UAVbuilder class which provides the flexibility to the 
 
 Please follow below steps to execute the program:
 
-Execute this command in the directory 'ObserverPattern/src'
+Execute this command in the directory 'BuilderPattern/src'
 
 `javac main.java`
 `java main`
 
 **Sample output**
-```
-
-```
+View main.java
