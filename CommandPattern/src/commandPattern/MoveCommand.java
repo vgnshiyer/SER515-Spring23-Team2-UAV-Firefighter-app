@@ -1,4 +1,3 @@
-package commandPattern;
 
 public class MoveCommand implements Command {
 

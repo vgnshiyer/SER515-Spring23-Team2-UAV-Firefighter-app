@@ -1,4 +1,3 @@
-package commandPattern;
 
 public class Drone {
 
