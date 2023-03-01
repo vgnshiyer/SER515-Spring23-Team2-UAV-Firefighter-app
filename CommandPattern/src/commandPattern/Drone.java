@@ -1,3 +1,4 @@
+// The receiver class (drone)
 
 public class Drone {
 
