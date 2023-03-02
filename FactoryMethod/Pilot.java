@@ -4,7 +4,12 @@ public class Pilot implements UAVUser {
 
 	private List drones;
 
-	private Operator operator;
+	private List acl;
+
+	public Pilot() {
+
+	}
+
 
 	public void dropRedardants() {
 

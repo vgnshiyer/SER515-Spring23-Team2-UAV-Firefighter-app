@@ -4,7 +4,11 @@ public class Operator implements UAVUser {
 
 	private List drones;
 
-	private List pilots;
+	private List acl;
+
+	public Operator() {
+
+	}
 
 	public void notify() {
 
@@ -33,5 +37,4 @@ public class Operator implements UAVUser {
 	public void connectDrones() {
 
 	}
-
 }
