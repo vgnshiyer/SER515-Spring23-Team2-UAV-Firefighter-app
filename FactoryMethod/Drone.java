@@ -6,11 +6,9 @@ public class Drone {
 	private int id;
 	private Float latitude;
 	private Float longitude;
-	private GetUserFactory getUserFactory;
 
 	public Drone(int id) {
 		this.id = id;
-		this.getUserFactory = new GetUserFactory();
 	}
 
 	public int getDroneId() {

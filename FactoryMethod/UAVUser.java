@@ -9,5 +9,4 @@ public interface UAVUser {
 
 	public void showLiveLocation(Drone d);
 
-
 }
