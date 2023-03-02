@@ -6,7 +6,7 @@ public class Drone {
 		this.ID = ID;
 	}
 
-	public getID(){
+	public int getID(){
 		return this.ID;
 	}
 

@@ -21,7 +21,7 @@ public class Pack {
 	
 	public void addDrone(Drone drone) {
 		this.drones.add(drone);
-		System.out.println("Added drone" + drone.getID() + "to a singleton pack");
+		System.out.println("Added drone" + drone.getID() + " to a singleton pack");
 	}
 
 }
