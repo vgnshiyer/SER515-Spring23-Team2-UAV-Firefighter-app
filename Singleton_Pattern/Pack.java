@@ -6,7 +6,7 @@ public class Pack {
 
 	private static Pack pack=null;
 
-	private List<Drone> drones;
+	private List<Drone> drones = new ArrayList<Drone>();
 
 	private Pack() {
 	}
@@ -20,6 +20,7 @@ public class Pack {
 	
 	public void addDrone(Drone drone) {
 		this.drones.add(drone);
+		System.out.println("Added drone to a singleton pack")
 	}
 
 }
