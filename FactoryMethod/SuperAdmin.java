@@ -5,9 +5,7 @@ public class SuperAdmin implements UAVUser {
 	private List drones;
 
 	public SuperAdmin() {
-		this.acl = new List<String>;
 		this.drones = new List<int>;
-		this.acl.add('gps', 'camera', 'sensor');
 	}
 
 	public void addDrones(Drone d) {
@@ -15,14 +13,14 @@ public class SuperAdmin implements UAVUser {
 	}
 
 	public void notify() {
-		System.out.println("SuperAdmin Notified!");
+		System.out.println("Sending notification to the Pilot/Operator!");
 	}
 
 	public void connectDrones(Drone d) {
 		System.out.println("Connected to drone: " + d.getDroneId());
 	}
 
-	public void getLiveLocation(Drone d) {
+	public void showLiveLocation(Drone d) {
 		Float lat = d.getLatitude();
 		Float lon = d.getLongitude();
 		System.out.println("Latitude: " + d.getLatitude());

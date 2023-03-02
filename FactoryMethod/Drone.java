@@ -33,4 +33,9 @@ public class Drone {
 		return this.longitude;
 	}
 
+	public void setLatLon(Float lat, Float lon) {
+		this.setLatitude(lat);
+		this.setLongitude(lon);
+	}
+
 }
