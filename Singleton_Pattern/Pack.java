@@ -4,18 +4,22 @@ public class Pack {
 
 	private int pack_id;
 
-	private static Pack pack;
+	private static Pack pack=null;
 
-	private List drones;
+	private List<Drone> drones;
 
-	private void Pack() {
+	private Pack() {
 	}
 
-	public Pack getInstance() {
-		return null;
+	public static Pack getInstance() {
+		if(pack==null){
+			pack = new Pack();
+		}
+		return pack;
 	}
 	
-	public void addDrone() {
+	public void addDrone(Drone drone) {
+		this.drones.add(drone);
 	}
 
 }
