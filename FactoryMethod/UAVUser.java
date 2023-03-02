@@ -1,6 +1,9 @@
+import java.util.List;
 public interface UAVUser {
 
-	private ID id;
+	private int id;
+
+	private List acl;
 
 	public void notify();
 

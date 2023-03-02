@@ -2,11 +2,14 @@ import java.util.List;
 
 public class SuperAdmin implements UAVUser {
 
-	private List operators;
-
-	private List pilots;
+	private List acl;
 
 	private List drones;
+
+	public SuperAdmin() {
+		this.acl = new List<String>;
+		this.drones = new List<String>;
+	}
 
 	public void notify() {
 
@@ -35,5 +38,4 @@ public class SuperAdmin implements UAVUser {
 	public void getFireUpdates() {
 
 	}
-
 }
