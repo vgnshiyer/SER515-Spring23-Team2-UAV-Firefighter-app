@@ -30,6 +30,10 @@ public interface Adapter {
     public AdapterImpl(Pilot pilot) {
         this.pilot = pilot;
     }
+
+    public AdapterImpl(Admin admin) {
+        this.admin = admin;
+    }
     
     public void controlDrone() {
         if (operator != null) {
