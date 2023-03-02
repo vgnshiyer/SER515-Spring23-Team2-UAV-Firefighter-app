@@ -3,32 +3,34 @@ import java.util.ArrayList;
 
 public class Drone {
 
-	private List resources;
-
+	private int id;
 	private Float latitude;
-
 	private Float longitude;
-
 	private GetUserFactory getUserFactory;
 
-	public ArrayList getMetrics() {
-		return null;
+	public Drone(int id) {
+		this.id = id;
+		this.getUserFactory = new GetUserFactory();
 	}
 
-	public void setLatitude() {
-
+	public int getDroneId() {
+		return this.id;
 	}
 
-	public void setLongitude() {
+	public void setLatitude(Float lat) {
+		this.latitude = lat;
+	}
 
+	public void setLongitude(Float lon) {
+		this.longitude = lon;
 	}
 
 	public Float getLatitude() {
-		return null;
+		return this.latitude;
 	}
 
 	public Float getLongitude() {
-		return null;
+		return this.longitude;
 	}
 
 }
