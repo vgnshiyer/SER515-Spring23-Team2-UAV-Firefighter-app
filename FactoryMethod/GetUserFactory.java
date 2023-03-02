@@ -2,16 +2,25 @@ import java.util.List;
 
 public class GetUserFactory {
 
-	private SuperAdmin superAdmin;
+	public UAVUser getUser(String userType) {
+		if(userType==null) {
+			return null;
+		}
 
-	private UAVUser uAVUser;
+		if(userType.equalsIgnoreCase("SUPERADMIN")) {
+			return new SuperAdmin();
+		}
 
-	public UAVUser getUser() {
+		else if(userType.equalsIgnoreCase("PILOT")) {
+			return new Pilot();
+		}
+
+		else if(userType.equalsIgnoreCase("OPERATOR")) {
+			return new Operator();
+		}
+
 		return null;
-	}
-
-	public List getAcl() {
-		return null;
+		
 	}
 
 }

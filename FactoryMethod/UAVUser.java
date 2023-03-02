@@ -1,14 +1,13 @@
 import java.util.List;
 public interface UAVUser {
 
-	private int id;
-
-	private List acl;
+	public void addDrones(Drone d);
 
 	public void notify();
 
-	public abstract void connectDrones();
+	public void connectDrones(Drone d);
 
-	public abstract void monitorHealth();
+	public void showLiveLocation(Drone d);
+
 
 }
