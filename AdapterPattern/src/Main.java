@@ -1,13 +1,14 @@
 import java.util.Scanner;
 
+
 public class Main {
 /**
- * @param <ComputerGUI>
  * @param <iPadGUI>
  * @param <GameControllerGUI>
+ * @param <Adapter>
  * @param args
  */
-public static <ComputerGUI, iPadGUI, GameControllerGUI> void main(String[] args) {
+public static void main(String[] args) {
     // Instantiate Admin, Operator, and Pilot objects
 
     // Instantiate GUI objects
@@ -21,7 +22,7 @@ public static <ComputerGUI, iPadGUI, GameControllerGUI> void main(String[] args)
     Object pilot;
     final Adapter pilotAdapter = new Adapter(pilot);
     Object admin;
-    final Adapter adminAdapter = new Adapter(admin);
+    //final Adapter adminAdapter = new Adapter(admin);
 
     // Use Adapters to control drones
     Scanner scanner = new Scanner(System.in);
@@ -34,12 +35,12 @@ public static <ComputerGUI, iPadGUI, GameControllerGUI> void main(String[] args)
             ComputerGUI.displayMission();
             break;
         case 1:
-            iPadGUI.displayMission();
-            operatorAdapter.controlDrone();
+            iPadGUI.displayControls();
+            //operatorAdapter.controlDrone();
             break;
         case 2:
             GameControllerGUI.displayControls();
-            pilotAdapter.controlDrone();
+            //pilotAdapter.controlDrone();
             break;
         default:
             System.out.println("Invalid choice");

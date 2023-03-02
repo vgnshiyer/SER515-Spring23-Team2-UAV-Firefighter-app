@@ -1,7 +1,7 @@
 
 // ComputerGUI Class
 public class ComputerGUI {
-public void displayMission() { 
+public static void displayMission() { 
 System.out.println("Click here to create mission");
 System.out.println("Click here to select mission 1");
 System.out.println("Click here to select mission 2");
